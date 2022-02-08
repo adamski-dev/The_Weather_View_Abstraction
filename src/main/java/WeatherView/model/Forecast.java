@@ -6,12 +6,12 @@ import java.time.format.DateTimeFormatter;
 public class Forecast {
 
     private static final DateTimeFormatter FORECAST_DATE_FORMAT = DateTimeFormatter.ofPattern("E dd");
-    String date;
-    String temperature;
-    String humidity;
-    String description;
-    String pressure;
-    String icon;
+    private String date;
+    private String temperature;
+    private String humidity;
+    private String description;
+    private String pressure;
+    private String icon;
 
     public Forecast(String data){
         this.date = pullDate(data);
